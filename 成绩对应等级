@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{int score;
+printf("输入你的成绩:",score);
+//成绩的范围在60到100之间
+//60-69为D等，70-79为C等，80-89为B等，90-100为A等。
+scanf("%d",&score);
+switch(score/10){
+case 6 :printf("你的成绩等级为D",score);
+	break;
+case 7 :printf("你的成绩等级为C",score);
+	break;
+case 8 :printf("你的成绩等级为B",score);
+	break;
+default:printf("你的成绩等级为A",score);
+	break;
+}
+system("pause");
+return 0;
+
+
+}
